@@ -10,7 +10,6 @@ class base::params {
 
       $packages = [
         'deltarpm',
-        'epel-release',
         'ncurses-term',
         'setroubleshoot-server',
         'tmux',

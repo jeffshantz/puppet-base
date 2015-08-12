@@ -17,7 +17,5 @@
 # Copyright 2015, Western University, unless otherwise noted.
 #
 class base ($packages = $base::params::packages) inherits base::params {
-
   include base::install
-
 }

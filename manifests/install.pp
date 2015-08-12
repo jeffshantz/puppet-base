@@ -7,9 +7,9 @@ class base::install {
   ensure_packages($base::packages)
 
   # Ensure we start off with our system up to date.
-  exec { 'update-packages':
-    path        => ['/usr/bin'],
-    command     => 'yum update -y',
+  exec { "update-packages":
+    path        => ["/usr/bin"],
+    command     => "yum update -y",
     refreshonly => true,
     subscribe   => Package[$base::packages],
   }
